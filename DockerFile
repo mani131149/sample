@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+VOLUME /tmp
+ADD target/spring-boot-starter-parent-2.2.2.BUILD-SNAPSHOT.jar app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
